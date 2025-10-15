@@ -87,6 +87,59 @@ export default function Home() {
           </p>
         </a>
       </div>
+
+      {/* Sections */}
+      <section id="about" className="w-full max-w-5xl mb-8">
+        <div className="rounded-lg border border-transparent p-6 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+          <h2 className="mb-3 text-2xl font-semibold">About Me</h2>
+          <p className="m-0 text-sm opacity-70">Itslxmns, Dmitriy.</p>
+        </div>
+      </section>
+
+      <section id="skills" className="w-full max-w-5xl mb-8">
+        <div className="rounded-lg border border-transparent p-6 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+          <h2 className="mb-3 text-2xl font-semibold">Skills</h2>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {[
+              "Visual Studio Code",
+              "Blender",
+              "Photoshop",
+              "Premier Pro",
+              "Roblox Studio",
+              "Discord Bots",
+              "Lua",
+              "Python",
+              "JavaScript",
+              "TypeScript",
+              "SQLite",
+              "React",
+              "HTML",
+              "CSS",
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="rounded-lg border border-neutral-200 px-3 py-1 text-sm opacity-80 transition hover:opacity-100 dark:border-neutral-700"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" className="w-full max-w-5xl mb-8">
+        <div className="rounded-lg border border-transparent p-6 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+          <h2 className="mb-3 text-2xl font-semibold">Contact Me</h2>
+          <a
+            href="https://t.me/lxmnsdev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg border border-transparent px-4 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          >
+            Telegram
+          </a>
+        </div>
+      </section>
     </main>
   );
 }
